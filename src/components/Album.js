@@ -7,24 +7,33 @@ class Album extends Component {
     super(props);
 
     const album = albumData.find( album => {
-       return album.slug === this.props.match.params.slug
+       return albumData.slug === this.props.match.params.slug
      });
 
      this.state = {
-       album: album
+       album: album || {},
      };
-     }
+  }
 
   render() {
     return (
       <section className="album">
       <section id="album-info">
-           <img id="album-cover-art" src={this.state.album.albumCover} alt={''} />
+           <img id="album-cover-art" alt={''} src={this.state.album.albumCover || ''}  />
            <div className="album-details">
-           <h1 id="album-title">{this.state.album.title}</h1>
-           <h2 className="artist">{this.state.album.artist}</h2>
-           <div id="release-info">{this.state.album.releaseInfo}</div>
+             <h1 id="album-title">{this.state.album.title}</h1>
+             <h2 className="artist">{this.state.album.artist}</h2>
+             <div id="release-info">{this.state.album.releaseInfo}</div>
            </div>
+           <table id="song-list">
+           <colgroup>
+             <col id="song-number-column" />
+             <col id="song-title-column" />
+             <col id="song-duration-column" />
+           </colgroup>
+           <tbody>
+           </tbody>
+         </table>
          </section>
       </section>
     );
