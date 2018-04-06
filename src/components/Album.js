@@ -13,7 +13,8 @@ class Album extends Component {
      this.state = {
        album: album || {},
      };
-  }
+
+    }
 
   render() {
     return (
@@ -25,15 +26,20 @@ class Album extends Component {
              <h2 className="artist">{this.state.album.artist}</h2>
              <div id="release-info">{this.state.album.releaseInfo}</div>
            </div>
+
+           <div className="song-list">
            <table id="song-list">
-           <colgroup>
-             <col id="song-number-column" />
-             <col id="song-title-column" />
-             <col id="song-duration-column" />
-           </colgroup>
-           <tbody>
-           </tbody>
-         </table>
+             <tbody>
+               {this.state.album.songs.map( (album, index) =>
+                   <tr>
+                     <td key={index}>{index + 1}</td>
+                     <td >{album.title}</td>
+                     <td >{album.duration}</td>
+                   </tr>
+               )}
+               </tbody>
+            </table>
+            </div>
          </section>
       </section>
     );
