@@ -11,12 +11,13 @@ class Album extends Component {
      });
 
      this.state = {
-       album: album || {},
+       album: album
      };
 
     }
 
   render() {
+    console.log(this.state.album);
     return (
       <section className="album">
         <section id="album-info">
@@ -30,11 +31,11 @@ class Album extends Component {
            <div className="song-list">
            <table id="song-list">
              <tbody>
-               {this.state.album.songs.map( (album, index) =>
+               {this.state.album.songs.map( (song, index) =>
                    <tr>
                      <td key={index}>{index + 1}</td>
-                     <td >{album.title}</td>
-                     <td >{album.duration}</td>
+                     <td >{song.title}</td>
+                     <td >{song.duration}</td>
                    </tr>
                )}
                </tbody>
