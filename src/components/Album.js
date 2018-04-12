@@ -99,8 +99,22 @@ class Album extends Component {
    handleVolumeChange(e) {
      const newVolume = e.target.value;
      this.setState({ volume: newVolume });
-     console.log("handleVolumeChange has been called");
+     this.audioElement.volume = newVolume;
    }
+
+   formatTime(inSeconds){
+    const minutes = Math.floor(inSeconds / 60);
+    const seconds = Math.floor(inSeconds - minutes * 60)
+    if(!isNaN(inSeconds) && seconds < 10){
+      return minutes + ':0' + seconds;
+    }
+    else if (seconds >= 10) {
+        return minutes + ':' + seconds;
+      }
+    else {
+      return '-:--'
+    }
+  }
 
     render() {
        return (
@@ -146,6 +160,7 @@ class Album extends Component {
               handleNextClick={() => this.handleNextClick()}
               handleTimeChange={(e) => this.handleTimeChange(e)}
               handleVolumeChange={(e) => this.handleVolumeChange(e)}
+              formatTime = {(inSeconds) => this.formatTime(inSeconds)}
              />
          </section>
     );
