@@ -65,21 +65,6 @@ class Album extends Component {
       this.setState({ currentSong: song });
     }
 
-    handleSongNumberClick(song) {
-      const currentIndex = this.state.album.songs.findIndex(song => this.state.currentSong === song);
-      const isSameSong = this.state.currentSong === song;
-        if (this.state.isPlaying===false) {
-          return <span className="song-number">{currentIndex+1}</span>;
-        }
-        if (this.state.isPlaying && isSameSong) {
-          this.pause();
-            return <span className="ion-pause">{}</span>;
-        } else {
-          if (!isSameSong) { this.setSong(song); }
-          this.play();
-            return <span className="ion-play">{}</span>;
-        }
-    }
 
     handleSongClick(song) {
       const isSameSong = this.state.currentSong === song;
@@ -134,42 +119,15 @@ class Album extends Component {
   }
 
 
-/*  <span className={
-    this.state.currentSong!==song && this.state.hover===false ?
-      this.toggleClassName(song) :
-      this.state.currentSong===song&&
-                      ((this.state.isPlaying===false&&this.state.hover) ||
-                      (this.state.isPlaying&&this.state.hover===false)) ?
-                        "play-icon" :
-                      this.state.currentSong===song&&
-                      ((this.state.isPlaying&&this.state.hover) ||
-                      (this.state.isPlaying===false&&this.state.hover===false)) ?
-                        "pause-icon" :
-                      this.hovering()}
-                      onMouseOver={() => this.handleMouseOver()}
-                      onMouseOut={() => this.handleMouseOut()}>
-                        {this.state.hover ?
-                          null :
-                          this.state.currentSong!==song ?
-                          this.state.album.songs.indexOf(song) + 1 :
-                          null}
-                    </span>*/
-
-  hovering(song){
-    if(this.state.hover===true){
-      return "ion-play";
+  songClass(song){
+    if (this.state.currentSong===song){
+      if (this.state.isPlaying){
+        return 'song playing';
+      } else {
+        return 'song paused';
+      }
     }
-    else {
-      return null;
-    }
-  }
-
-  handleMouseOver(){
-    this.setState({hover: true});
-    }
-
-  handleMouseOut(){
-    this.setState({hover: false});
+    return 'song';
   }
 
     render() {
@@ -191,12 +149,13 @@ class Album extends Component {
              </colgroup>
              <tbody>
                {this.state.album.songs.map( (song, index) =>
-                 <tr className="song" key={index} onClick={ () => this.handleSongClick(song) } >
+                 <tr className={this.songClass(song)} key={index} onClick={ () => this.handleSongClick(song) } >
                    <td className="song-actions">
-                     <button id="play-pause" onClick={this.props.handleSongClick} />
-                        <span className={(this.state.IsPlaying===false && this.state.currentSong===null) || (this.state.IsPlaying===false && this.state.hover===false) ? {index + 1} : ((this.state.IsPlaying===true) 'ion-pause' || (this.state.IsPlaying===false && this.state.hover===true) 'ion-play' ) } >
-                        </span>
-                     </button>
+                     <button id="play-pause-button" onClick={this.props.handleSongClick} >
+                        <span className="song-number">{index + 1}</span>
+                        <span className="ion-pause"></span>
+                        <span className="ion-play"></span>
+                    </button>
                    </td>
                    <td className="song-title">{song.title}</td>
                    <td className="song-duration">{this.formatTime(parseInt(song.duration, 10))}</td>

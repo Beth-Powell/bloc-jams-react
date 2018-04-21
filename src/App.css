@@ -26,3 +26,33 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.ion-play, .ion-pause {
+  display: none;
+}
+
+.song:hover .ion-play {
+  display: block;
+}
+
+.song:hover .song-number {
+  display: none;
+}
+
+.song.playing .ion-play {
+  display: block;
+}
+
+.song.playing .ion-pause,
+  .song.playing .song-number {
+    display: none;
+  }
+
+.song.paused .ion-pause {
+  display: block;
+}
+
+.song.paused .ion-play,
+  .song.paused .song-number {
+    display: none;
+  }
