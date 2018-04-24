@@ -1,0 +1,13 @@
+.background {
+  position: relative;
+  top: -270px;
+  z-index: -1;
+}
+
+.hero-title {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 6em;
+  top: 10px;
+}

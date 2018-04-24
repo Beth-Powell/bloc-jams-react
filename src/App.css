@@ -1,18 +1,24 @@
-.App {
+/*.App {
   text-align: center;
+}*/
+
+.App .logo {
+  position: relative;
+  text-align: left;
+  top: 12px;
+  left: 15px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
+/*.App-header {
   height: 150px;
   padding: 20px;
   color: white;
+}*/
+
+header {
+  background-color:  #666699;
 }
+
 
 .App-title {
   font-size: 1.5em;
@@ -22,17 +28,26 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.navbar {
+  position: relative;
+  text-align: right;
+  bottom: 70px;
+  padding-right: 15px;
+  color: white;
+  font-size: 1em;
 }
 
-.ion-play, .ion-pause {
-  display: none;
+.song.ion-play, .song.ion-pause {
+    display: none;
 }
 
 .song:hover .ion-play {
   display: block;
+}
+
+.play-pause .ion-play,
+  .play-pause .ion-pause {
+    display: block;
 }
 
 .song:hover .song-number {
