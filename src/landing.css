@@ -3,17 +3,25 @@
   z-index: -1;
 }
 
+.background > img {
+  max-width: 100%;
+}
+
+.landing {
+  background: url(../src/assets/images/Landing_Page.jpg);
+}
 .hero-title {
   position: relative;
   text-align: center;
   color: white;
   font-size: 8em;
-  padding: 398px 0;
+  padding-top: 10px;
+  padding-bottom: 918px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.background > img {
-  max-width: 100%;
-}
+
 
 @media only screen and (max-width: 320px) {
   .hero-title{
@@ -28,6 +36,7 @@
 .column {
   float: left;
   width: 33.33%;
+  height: 364px;
   background: #171926
 }
 
@@ -35,17 +44,15 @@
   position: relative;
   text-align: center;
   transform: scaleX(1) translateY(0px);
+  color: white;
 }
 
 .ion-music-note, .ion-radio-waves,
   .ion-iphone {
     font-size: 10em;
+    color: white;
 }
 
 p {
   font-size: 1.5em;
-}
-
-.landing {
-  background: url(../../public/assets/images/Landing_Page.jpg);
 }
