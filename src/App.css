@@ -17,6 +17,7 @@
 
 header {
   background-color:  #666699;
+  padding-bottom: 15px;
 }
 
 
@@ -28,9 +29,9 @@ header {
   font-size: large;
 }
 
-.navbar {
+.navbar > a {
   position: relative;
-  text-align: right;
+  float: right;
   bottom: 70px;
   padding-right: 15px;
   color: white;

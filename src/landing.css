@@ -1,6 +1,5 @@
 .background {
   position: relative;
-  top: -270px;
   z-index: -1;
 }
 
@@ -8,6 +7,45 @@
   position: relative;
   text-align: center;
   color: white;
-  font-size: 6em;
-  top: 10px;
+  font-size: 8em;
+  padding: 398px 0;
+}
+
+.background > img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-title{
+    font-size: 8em;
+  }
+}
+@media (min-width: 640px)
+  .column.third {
+    width: 33.3%;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  background: #171926
+}
+
+.point {
+  position: relative;
+  text-align: center;
+  transform: scaleX(1) translateY(0px);
+}
+
+.ion-music-note, .ion-radio-waves,
+  .ion-iphone {
+    font-size: 10em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.landing {
+  background: url(../../public/assets/images/Landing_Page.jpg);
 }
