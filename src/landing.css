@@ -1,27 +1,25 @@
 .background {
   position: relative;
   z-index: -1;
-}
-
-.background > img {
-  max-width: 100%;
-}
+  }
 
 .landing {
-  background: url(../src/assets/images/Landing_Page.jpg);
+  height: auto;
+  width: 100%;
+  background-image: url(../src/assets/images/Landing_Page.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero-title {
   position: relative;
   text-align: center;
   color: white;
-  font-size: 8em;
+  font-size: 7vw;
   padding-top: 10px;
-  padding-bottom: 918px;
+  padding-bottom: 330px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
-
 
 @media only screen and (max-width: 320px) {
   .hero-title{
@@ -33,11 +31,19 @@
     width: 33.3%;
 }
 
+.selling-points {
+  position:relative;
+}
+
+h2 {
+  font-size: 2.5vw;
+}
+
 .column {
   float: left;
   width: 33.33%;
   height: 364px;
-  background: #171926
+  background: #171926;
 }
 
 .point {
@@ -45,12 +51,17 @@
   text-align: center;
   transform: scaleX(1) translateY(0px);
   color: white;
+  padding-top: 15px;
 }
 
 .ion-music-note, .ion-radio-waves,
   .ion-iphone {
-    font-size: 10em;
+    font-size: 7vw;
     color: white;
+}
+
+.point-description {
+  font-size: 2vw;
 }
 
 p {
