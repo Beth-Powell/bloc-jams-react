@@ -1,0 +1,44 @@
+a > img {
+  display: block;
+/*  margin-left: auto;
+  margin-right: auto;*/
+}
+
+.album-title {
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.album-artist {
+  text-align: center;
+}
+
+.number-songs {
+  text-align: center;
+  padding-bottom: 40px
+}
+
+.album-cover {
+  text-align: center;
+}
+
+.library {
+  position: relative;
+
+}
+
+.album-library {
+  float: left;
+  width: 33.33%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+
+.column-third {
+  position: relative;
+  width: 33.33%;
+  color: black;
+
+}
