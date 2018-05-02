@@ -23,21 +23,28 @@ a > img {
   text-align: center;
 }
 
-.library {
-  position: relative;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
 
+.item {
+  order: 0;
 }
 
 .album-library {
-  float: left;
   width: 33.33%;
   padding-right: 15px;
   padding-left: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 40px;
 }
 
 .column-third {
   position: relative;
+  padding-left: 15px;
   width: 33.33%;
   color: black;
 

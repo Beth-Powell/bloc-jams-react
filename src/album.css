@@ -1,0 +1,98 @@
+#album-cover-art {
+  height: 40%;
+  width: 40%;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+#album-title {
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 0px;
+}
+
+.artist {
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 5px;
+}
+
+#release-info {
+  color: red;
+  position: relative;
+  text-align: center;
+  display: inherit;
+  font-size: 5vw;
+}
+
+#song-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.song-actions {
+  padding-right: 5px;
+}
+
+.song-title {
+  padding-right: 10px;
+}
+
+.song-duration {
+  text-align: right;
+  padding-right: 40px;
+  padding-left: 150px;
+}
+
+tr {
+  padding-above: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid red;
+}
+
+/*.buttons {
+  grid-area: player-buttons;
+}
+
+.current-time {
+  grid-area: song-has-played;
+}
+
+.seek-bar {
+  grid-area: player-bar;
+}
+
+.total-time {
+  grid-area: song-duration;
+}
+
+.ion-volume-high {
+  grid-area: audio-icon;
+}
+
+
+.player-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". player-buttons ."
+    ". song-has-played ."
+    ". player-bar ."
+    ". song-duration ."
+    ". . . "
+    ". audio-icon ."
+    ". volume-bar ."
+}*/
+
+#buttons {
+  display: block;
+  margin: auto;
+}
+
+.seek-bar {
+  margin: auto;
+}

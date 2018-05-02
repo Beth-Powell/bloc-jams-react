@@ -38,6 +38,7 @@ header {
   font-size: 1em;
 }
 
+
 .song.ion-play, .song.ion-pause {
     display: none;
 }
@@ -71,4 +72,4 @@ header {
 .song.paused .ion-play,
   .song.paused .song-number {
     display: none;
-  }
+}

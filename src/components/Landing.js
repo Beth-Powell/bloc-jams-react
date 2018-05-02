@@ -5,7 +5,6 @@ const Landing = () => (
     <h1 className="hero-title">TURN THE MUSIC UP!</h1>
     <a className='background'>
     </a>
-
     <section className="selling-points">
       <div className="point column third">
         <span className="ion-music-note"></span>

@@ -8,15 +8,25 @@
   width: 100%;
   background-image: url(../src/assets/images/Landing_Page.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
+
+/*.background-image {
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-image: url(../src/assets/images/Landing_Page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
 .hero-title {
   position: relative;
   text-align: center;
   color: white;
   font-size: 7vw;
   padding-top: 10px;
-  padding-bottom: 330px;
+  padding-bottom: 430px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -31,9 +41,7 @@
     width: 33.3%;
 }
 
-.selling-points {
-  position:relative;
-}
+
 
 h2 {
   font-size: 2.5vw;
