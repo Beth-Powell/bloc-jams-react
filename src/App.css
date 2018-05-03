@@ -39,7 +39,7 @@ header {
 }
 
 
-.song.ion-play, .song.ion-pause {
+.song .ion-play, .song .ion-pause {
     display: none;
 }
 
@@ -47,8 +47,8 @@ header {
   display: block;
 }
 
-.play-pause .ion-play,
-  .play-pause .ion-pause {
+.play-pause-button .ion-play,
+  .play-pause-button .ion-pause {
     display: block;
 }
 
@@ -56,20 +56,20 @@ header {
   display: none;
 }
 
-.song.playing .ion-play {
+.song.playing .ion-pause {
   display: block;
 }
 
-.song.playing .ion-pause,
+.song.playing .ion-play,
   .song.playing .song-number {
     display: none;
   }
 
-.song.paused .ion-pause {
+.song.paused .ion-play {
   display: block;
 }
 
-.song.paused .ion-play,
+.song.paused .ion-pause,
   .song.paused .song-number {
     display: none;
 }

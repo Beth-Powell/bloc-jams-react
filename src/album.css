@@ -14,18 +14,17 @@
   margin-bottom: 0px;
 }
 
-.artist {
+h2, .artist {
   text-align: center;
   font-size: 2vw;
   margin-top: 5px;
+  margin-bottom: 2px;
 }
 
 #release-info {
-  color: red;
-  position: relative;
   text-align: center;
-  display: inherit;
-  font-size: 5vw;
+  font-size: 1.5vw;
+  padding-bottom: 20px;
 }
 
 #song-list {
@@ -47,47 +46,6 @@
   padding-left: 150px;
 }
 
-tr {
-  padding-above: 5px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid red;
-}
-
-/*.buttons {
-  grid-area: player-buttons;
-}
-
-.current-time {
-  grid-area: song-has-played;
-}
-
-.seek-bar {
-  grid-area: player-bar;
-}
-
-.total-time {
-  grid-area: song-duration;
-}
-
-.ion-volume-high {
-  grid-area: audio-icon;
-}
-
-
-.player-bar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    ". player-buttons ."
-    ". song-has-played ."
-    ". player-bar ."
-    ". song-duration ."
-    ". . . "
-    ". audio-icon ."
-    ". volume-bar ."
-}*/
-
 #buttons {
   display: block;
   margin: auto;
@@ -95,4 +53,12 @@ tr {
 
 .seek-bar {
   margin: auto;
+}
+
+.player-bar {
+  text-align: center;
+}
+
+.ion-volume-high {
+  padding-top: 20px;
 }

@@ -1,7 +1,8 @@
 export default [{
     title: 'Sea Change',
     artist: 'Cellophane Sam',
-    releaseInfo: 'Free Music Archive',
+    year: '2010',
+    label: 'Free Music Archive',
     albumCover: '/assets/images/album_covers/Cellophane Sam.jpg',
     slug: 'sea-changes',
     songs: [
@@ -15,7 +16,8 @@ export default [{
 {
   title: 'Running Playlist Songs',
   artist: 'Various Artists',
-  releaseInfo: 'Beats Coach',
+  year: '2000',
+  label: 'Beats Coach',
   albumCover: '/assets/images/album_covers/Running Playlist.png',
   slug: 'running-playlist',
   songs: [
@@ -29,7 +31,8 @@ export default [{
 {
   title: 'The Colors',
   artist: 'Pablo Picasso',
-  releaseInfo: '1909 Spanish Records',
+  year: '1909',
+  label: 'Spanish Records',
   albumCover: '/assets/images/album_covers/01.jpg',
   slug: 'the-colors',
   songs: [
